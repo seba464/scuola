@@ -1,0 +1,31 @@
+/******************************************************************************
+
+sebastian berescu
+chiede due numeri interi in input e li memorizza in due variabili num1 e num2. 
+se il secondo numero è più basso del primo scambiare il contenuto delle variabile
+stampare il maggiore num1 e  il minore num2 (i due numeri stampati dovranno essere in ordine crescente)
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    int num1, num2, temp;
+
+
+    printf("Inserisci il primo numero: ");
+    scanf("%d", &num1);
+
+    printf("Inserisci il secondo numero: ");
+    scanf("%d", &num2);
+
+    if (num2 < num1) {
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+
+    printf("Numeri in ordine crescente: %d %d\n", num1, num2);
+
+    return 0;
+}
+
+
